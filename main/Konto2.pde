@@ -1,15 +1,15 @@
-class Knap1 {
+class Konto2 {
 
   PVector pos = new PVector(0, 0);
   float width = 0;
   float height = 0;
-  color k = #FADFC2; 
+  color k = #C5DBF0; 
   String tekst; 
   Boolean presset = false; 
   Boolean trykket = false; 
 
   //Konstruktør til at lave vores knap
-  Knap1(int x, int y, int w, int h, String t, color kk) {
+  Konto2(int x, int y, int w, int h, String t, color kk) {
 
     pos.x = x;
     pos.y = y;
@@ -20,7 +20,7 @@ class Knap1 {
   }
   
   //skal placeres i void draw() for at kunne virke, ellers kan knappen ikke trykkes på
-  void update() {
+  void konto2Update() {
 
     if (mousePressed == true && mouseButton == LEFT && presset == false) 
     {
@@ -36,14 +36,14 @@ class Knap1 {
   }
   
   //skal placeres i void draw() for at kunne gengive knap til skærm
-  void tegnKnap(){
+  void tegnKonto2(){
     
     fill(k);
     rect(pos.x,pos.y,width,height);
     
     fill(0);
     textAlign(CENTER, CENTER);
-    text(tekst, pos.x+(width/2), pos.y+(height/2));
+    text(tekst, pos.x+(width/2), pos.y+(height/2)-25);
   }
   boolean registrerKlik(){
    return trykket; 

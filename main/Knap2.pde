@@ -1,4 +1,4 @@
-class Knap1 {
+class Knap2 {
 
   PVector pos = new PVector(0, 0);
   float width = 0;
@@ -9,7 +9,7 @@ class Knap1 {
   Boolean trykket = false; 
 
   //Konstruktør til at lave vores knap
-  Knap1(int x, int y, int w, int h, String t, color kk) {
+  Knap2(int x, int y, int w, int h, String t, color kk) {
 
     pos.x = x;
     pos.y = y;
@@ -20,7 +20,7 @@ class Knap1 {
   }
   
   //skal placeres i void draw() for at kunne virke, ellers kan knappen ikke trykkes på
-  void update() {
+  void update2() {
 
     if (mousePressed == true && mouseButton == LEFT && presset == false) 
     {
@@ -36,7 +36,7 @@ class Knap1 {
   }
   
   //skal placeres i void draw() for at kunne gengive knap til skærm
-  void tegnKnap(){
+  void tegnKnap2(){
     
     fill(k);
     rect(pos.x,pos.y,width,height);
